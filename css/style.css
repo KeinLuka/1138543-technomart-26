@@ -81,7 +81,7 @@ a {
 .wraper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-content: center;
   align-items: center;
   box-sizing: border-box;
@@ -172,32 +172,49 @@ a {
 
 .header-top__link {
   display: block;
-  position: relative;
   padding-top: 12px;
   padding-bottom: 12px;
   color: #ffffff;
   font-size: 17px;
   line-height: 18px;
+  position: relative;
 }
 
 .bookmark {
   padding-left: 44px;
-  padding-right: 44px;
+  padding-right: 40px;
 }
 
-.bookmark::before {
-  content: "";
-
-
+.icon-bookmark {
+  content: ""; 
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  fill: #6a7180;
 }
 
 .cart {
-  padding-left: 33px;
+  padding-left: 37px;
   padding-right: 31px
+}
+
+.icon-cart {
+  content: ""; 
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 6px;
+  fill: #6a7180;
 }
 
 .header-top__link:hover {
   background-color: #212a3a;
+}
+
+.header-top__link:hover .icon-bookmark,
+.header-top__link:hover .icon-cart{
+  fill: #fff;
 }
 
 .header-top__link:active {
@@ -205,9 +222,14 @@ a {
   color: #8b8e94;
 }
 
+.header-top__link:active .icon-bookmark,
+.header-top__link:active .icon-cart {
+  fill: #6a7180;
+}
+
 .btn-green {
-  padding-right: 21px;
-  padding-left: 21px;
+  padding-right: 22px;
+  padding-left: 20px;
   background-color: #63a63e;
 }
 
