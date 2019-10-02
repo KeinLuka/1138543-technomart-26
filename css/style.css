@@ -439,7 +439,7 @@ img {
   font-size: 16px;
   line-height: 18px;
   margin-left: 15px;
-  border-bottom: 1px solid #32425c;
+  text-decoration: underline;
 }
 
 .cabinet__link {
@@ -447,7 +447,7 @@ img {
   font-size: 16px;
   line-height: 18px;
   margin-left: 32px;
-  border-bottom: 1px solid #32425c;
+  text-decoration: underline;
   position: relative;
 }
 
@@ -505,7 +505,6 @@ img {
   position: absolute;
   top: 14px;
   left: 15px;
-  fill: #c5c5c5;
 }
 
 .header-info__link:hover,
@@ -613,8 +612,10 @@ img {
 
 .home {
   display: block;
-  padding-left: 30px;
-  padding-top: 20px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
 }
 
 .bread-crumb__list .bread-crumb__item:first-child::before {
@@ -660,14 +661,29 @@ img {
 
 .product-section__title {
   width: 100%;
+  padding: 30px 0 32px 28px;
+  background-color: #f2f6f8;
+  margin-bottom: 18px;
 }
 
 .filter {
-  width: 24%;
+  width: 220px;
+}
+
+.filter__title {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+  width: 203px;
+  background-color: #f7f3ec;
+  padding-top: 10px;
+  padding-left: 17px;
+  padding-bottom: 10px
 }
 
 .product1 {
-  width: 74%;
+  width: 700px;
 }
 
 .menu {
@@ -675,25 +691,101 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: #f7f3ec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 19px;
+  padding-right: 15px
+}
+
+.menu__title {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 .menu__list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 60%;
+  justify-content: flex-start;
+  width: 71%;
   padding: 0;
   margin: 0;
 }
 
+.menu__item {
+  margin-right: 31px;
+  margin-left: 26px;
+}
+
+.menu__item-up {
+  margin-right: 21px;
+  margin-left: 18px;
+}
+
+.menu__btn {
+  background-color: inherit;
+  border: none;
+  text-transform: uppercase;
+  font-size: inherit;
+  color: #cacaca;
+  border-bottom: 1px dotted #ee3643;
+  padding: 0;
+  outline: none;
+}
+
+.menu__btn-down,
+.menu__btn-up {
+  border: none;
+}
+
+.menu__btn:hover {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.menu__btn-down:hover,
+.menu__btn-up:hover {
+  fill: #000000;
+  border: none;
+}
+
+.menu__btn:active,
+.menu__btn:focus {
+  color: #ee3643;
+  border:none;
+}
+
+.menu__btn-down:active,
+.menu__btn-down:focus-within {
+  fill: #ee3643;
+  border: none;
+}
+
 .product__list {
   list-style: none;
+  text-transform: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.product__item {
+  position: relative;
+  font-weight: bold;
+  border: 1px solid #eaeaea;
+  margin-top: 20px;
+}
+
+.product__item:hover .poopup {
+  display: block;
+}
+
+.product__item:hover {
+  box-shadow: 0 0 21px -7px #293449;
 }
 
 .product__menu {
@@ -703,13 +795,59 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 30%;
+  width: 41%;
+  margin-top: 53px;
+}
+
+.product__btn {
+  background-color: inherit;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 38px;
+  outline: none;
+}
+
+.product__btn-next {
+  text-transform: uppercase;
+  padding-right: 65px;
+  padding-left: 70px;
+  margin-right: 3px;
+}
+
+.product__btn:hover {
+  border-color: #bdc6ca;
+}
+
+.product__btn:active {
+  border-color: #ee3643;
+}
+
+.product__btn:focus {
+  border-color: #ee3643;
+  background-color: #ee3643;
+  color: #fff;
 }
 
 .about__perforator {
   background-color: #f2f6f8;
+  margin-top: 59px;
+  padding-bottom: 68px;
 }
 
+.perforator__title {
+  padding-top: 65px;
+  padding-left: 4px;
+  padding-bottom: 26px;
+}
+
+.perforator__desc {
+  padding: 0;
+  margin: 0;
+}
 
 /*конец*/
 .category {
@@ -996,14 +1134,6 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-/*Стили для страницы каталог*/
-
-.product__list {
-  list-style: none;
-}
-
-/*Конец*/
 
 .popular__item {
   position: relative;
