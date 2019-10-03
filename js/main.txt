@@ -25,7 +25,6 @@ window.addEventListener('load', function() {
       slide[i].classList.add('js-display');
     });
 
-
   var sliders = document.querySelector(".bottom-slider");
   var button = sliders.querySelectorAll(".bottom-slide__button");
   var slide1 = sliders.querySelectorAll(".slider__item");
