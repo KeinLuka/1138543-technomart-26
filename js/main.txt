@@ -25,23 +25,20 @@ window.addEventListener('load', function() {
       slide[i].classList.add('js-display');
     });
 
-});
 
-
-window.addEventListener("load", function() {
-  var slider = document.querySelector(".bottom-slider");
-  var button = slider.querySelectorAll(".bottom-slide__button");
-  var slide = slider.querySelectorAll(".slider__item");
+  var sliders = document.querySelector(".bottom-slider");
+  var button = sliders.querySelectorAll(".bottom-slide__button");
+  var slide1 = sliders.querySelectorAll(".slider__item");
   button.forEach(function(btn, i) {
     btn.addEventListener("click", function() {
       button.forEach(function(btn) {
         btn.classList.remove("control__btn--active");
       });
       btn.classList.add("control__btn--active");
-      slide.forEach(function(sl) {
+      slide1.forEach(function(sl) {
         sl.classList.remove("js-display");
       });
-      slide[i].classList.add("js-display");
+      slide1[i].classList.add("js-display");
     });
   });
 });
