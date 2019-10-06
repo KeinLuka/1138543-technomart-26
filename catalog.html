@@ -88,7 +88,7 @@
         </ul>
         <div class="product-section">
           <h2 class="product-section__title title">Перфораторы</h2>
-          <form action="get" class="filter">
+          <form action="https://echo.htmlacademy.ru" method="post" class="filter">
             <h3 class="filter__title">Фильтр:</h3>
             <fieldset class="form__price">
               <legend class="filter__product">Цена:</legend>
@@ -97,31 +97,39 @@
                 <div class="circle second-circle"></div>
               </div>
               <div class="prices">
-                <div class="pric">0</div>
-                <div class="pric">30000</div>
+                <ul class="pric-list">
+                  <li class="pric">
+                    <label class="visually-hidden" for="min-size">0</label>
+                    <input class="pric__input" id="min-size" type="text" value="0">
+                  </li>
+                  <li class="pric">
+                    <label class="visually-hidden" for="max-size">30000</label>
+                    <input class="pric__input" id="max-size" type="text" value="30000">
+                  </li>
+                </ul>
               </div>
             </fieldset>
             <fieldset class="form__producer">
               <legend class="filter__product legend__producer">Производители:</legend>
               <ul class="producer__list">
                 <li class="producer__item">
-                  <input type="checkbox" checked id="bosh" class="chekbox-indicator">
+                  <input type="checkbox" checked id="bosh" class="chekbox-indicator" value="bosh">
                   <label class="input__desc" for="bosh">Bosch</label>
                 </li>
                 <li class="producer__item">
-                  <input type="checkbox" id="inter" class="chekbox-indicator">
+                  <input type="checkbox" id="inter" class="chekbox-indicator" value="inter">
                   <label class="input__desc" for="inter">Интерскол</label>
                 </li>
                 <li class="producer__item">
-                  <input type="checkbox" checked id="makita" class="chekbox-indicator">
+                  <input type="checkbox" checked id="makita" class="chekbox-indicator" value="makita">
                   <label class="input__desc" for="makita">Makita</label>
                 </li>
                 <li class="producer__item">
-                  <input type="checkbox" id="dewalt" class="chekbox-indicator">
+                  <input type="checkbox" id="dewalt" class="chekbox-indicator" value="dewalt">
                   <label class="input__desc" for="dewalt">Dewalt</label>
                 </li>
                 <li class="producer__item">
-                  <input type="checkbox" id="hitachi" class="chekbox-indicator">
+                  <input type="checkbox" id="hitachi" class="chekbox-indicator" value="hitachi">
                   <label class="input__desc" for="hitachi">Hitachi</label>
                 </li>
               </ul>
@@ -139,8 +147,8 @@
                   <label class="radio-desc" for="networking">Сетевые</label>
                 </li>
               </ul>
-              <button class="form_btn" type="button">Показать</button>
             </fieldset>
+            <button class="form_btn" type="submit">Показать</button>
           </form>
           <div class="product1">
             <div class="menu">
