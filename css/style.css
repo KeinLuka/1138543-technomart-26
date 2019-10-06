@@ -2039,6 +2039,9 @@ img {
   bottom: 348px;
   left: 146px;
   z-index: 1;
+  box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.6);
+  padding: 0;
+  margin: 0;
 }
 
 /*стили для страницы каталог*/
