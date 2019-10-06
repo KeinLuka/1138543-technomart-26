@@ -60,8 +60,8 @@
             <li>
               <a href="#" class="cabinet__link">Личный кабинет</a>
             </li>
+          </ul>
         </div>
-        </ul>
       </div>
       <nav class="navigation">
         <ul class="navigation__list">
@@ -92,14 +92,13 @@
             <h3 class="filter__title">Фильтр:</h3>
             <fieldset class="form__price">
               <legend class="filter__product">Цена:</legend>
-              <div>
-                <span>Фильтр цены</span>
+              <div class="range">
+                <div class="circle first-circle"></div>
+                <div class="circle second-circle"></div>
               </div>
-              <div>
-                <span>0</span>
-              </div>
-              <div>
-                <span>3000</span>
+              <div class="prices">
+                <div class="pric">0</div>
+                <div class="pric">30000</div>
               </div>
             </fieldset>
             <fieldset class="form__producer">
@@ -170,7 +169,7 @@
                   <img class="product__img" src="img/Perforator_2.jpg" alt="фото товара" width="218" height="170">
                   <h4 class="product__title"><a href="#" class="title__link">Перфоратор BOSCH BFG 3000</a></h4>
                   <p class="old">30500 Р.</p>
-                  <p class="product__price">12500 Р.</p>
+                  <p class="product__price">15500 Р.</p>
                 </div>
                 <div class="poopup">
                   <a class="poopup__link poopup_grn" href="#">Купить</a>
@@ -192,7 +191,6 @@
               <li class="product__item">
                 <div class="new">
                   <h3 class="visually-hidden">Новый товар</h3>
-                  <p>new</p>
                 </div>
                 <div class="product">
                   <img class="product__img" src="img/Perforator_2.jpg" alt="фото товара" width="218" height="170">
@@ -208,7 +206,8 @@
                 <div class="product">
                   <img class="product__img" src="img/Perforator_2.jpg" alt="фото товара" width="218" height="170">
                   <h4 class="product__title"><a href="#" class="title__link">Перфоратор BOSCH BFG 2000</a></h4>
-                  <p class="product__price price">12500 Р.</p>
+                  <p class="old">30500 Р.</p>
+                  <p class="product__price">15500 Р.</p>
                 </div>
                 <div class="poopup">
                   <a class="poopup__link poopup_grn" href="#">Купить</a>
@@ -230,7 +229,6 @@
               <li class="product__item">
                 <div class="new">
                   <h3 class="visually-hidden">Новый товар</h3>
-                  <p>new</p>
                 </div>
                 <div class="product">
                   <img class="product__img" src="img/Perforator_2.jpg" alt="фото товара" width="218" height="170">
@@ -246,7 +244,8 @@
                 <div class="product">
                   <img class="product__img" src="img/Perforator_2.jpg" alt="фото товара" width="218" height="170">
                   <h4 class="product__title"><a href="#" class="title__link">Перфоратор BOSCH BFG 2000</a></h4>
-                  <p class="product__price price">12500 Р.</p>
+                  <p class="old">30500 Р.</p>
+                  <p class="product__price">15500 Р.</p>
                 </div>
                 <div class="poopup">
                   <a class="poopup__link poopup_grn" href="#">Купить</a>
@@ -268,7 +267,6 @@
               <li class="product__item">
                 <div class="new">
                   <h3 class="visually-hidden">Новый товар</h3>
-                  <p>new</p>
                 </div>
                 <div class="product">
                   <img class="product__img" src="img/Perforator_2.jpg" alt="фото товара" width="218" height="170">
@@ -388,17 +386,19 @@
       </div>
     </div>
   </footer>
-  <div class="visually-hidden">
-    <img src="#" alt="Галочка" width="30" height="30">
-    <p>Товар добавлен в корзину!</p>
-    <div>
-      <ul>
-        <li><button type="button">Оформить заказ</button></li>
-        <li><button type="button"> Продолжить покупки</button></li>
+  <div class="popap-catalog">
+    <p class="popap-catalog__desc title">Товар добавлен в корзину!</p>
+    <div class="popap-catalog__area">
+      <ul class="popap-catalog__list">
+        <li><button class="popap-catalog__btn red-btn" type="button">Оформить заказ</button></li>
+        <li><button class="popap-catalog__btn-white" type="button"> Продолжить покупки</button></li>
       </ul>
     </div>
-    <button type="button" aria-label="Закрыть">Закрыть</button>
+    <button class="popap__close" type="button" aria-label="Закрыть">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </div>
+  <SCript src="js/catalog.js"></SCript>
 </body>
 
 </html>

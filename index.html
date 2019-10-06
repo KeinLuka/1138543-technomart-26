@@ -92,7 +92,7 @@
                 <button class="slider__btn slider__btn--prev" type="button" aria-label="Предидущий слайд"></button>
                 <button class="slider__btn slider__btn--next" type="button" aria-label="Следующий слайд"></button>
               </div>
-              <div class="slide slide--first js-display">
+              <div class="slide slide--first">
                 <h4 class="slide__title">Перфораторы</h4>
                 <p class="slide__description">Настоящие мужские игрушки</p>
                 <a class="slide__link red-btn" href="catalog.html">Открыть каталог</a>
@@ -106,7 +106,7 @@
                   </svg>
                 </div>
               </div>
-              <div class="slide slide--second">
+              <div class="slide slide--second js-display">
                 <h4 class="slide__title">Дрели</h4>
                 <p class="slide__description">Соседям на радость!</p>
                 <a class="slide__link red-btn" href="catalog.html">Открыть каталог</a>
@@ -185,7 +185,6 @@
           <li class="popular__item">
             <div class="new">
               <h3 class="visually-hidden">Новый товар</h3>
-              <p>new</p>
             </div>
             <div class="product">
               <img class="product__img" src="img/Perforator_2.jpg" alt="фото товара" width="218" height="170">
@@ -244,7 +243,7 @@
     <section class="bottom-slide">
       <div class="container">
         <h2 class="title slider-title">Сервисы</h2>
-        <p class="bottom-slide__desc">Хороший Интернет-магазин отличается от плохого не только ценами!<br>
+        <p class="bottom-slide__desc">Хороший Интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
         <div class="bottom-slider">
@@ -268,7 +267,7 @@
           <div class="slider__item bottom-slide__delivery js-display">
             <h3 class="title title-item">Доставка</h3>
             <p>
-              Мы судовольствием доставим ваш товар прямо<br>
+              Мы судовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно!<br>
               Ведб мы неплохо заработаем,<br>
               поднимая его на ваш этаж!
@@ -321,8 +320,8 @@
             <p class="about-company__desc3">Вы можете забрать товар сами,
               заехав в наш офис:
             </p>
-            <img class="about-company__img" src="img/map-2.png" alt=" г.Санкт-Петербург, ул.Б.Конюшечная,д. 19/8
-        телефон +7(812)555-055" width="300" height="158">
+            <a class="about-company__map" href="#"><img class="about-company__img" src="img/map-2.png" alt=" г.Санкт-Петербург, ул.Б.Конюшечная,д. 19/8
+              телефон +7(812)555-055" width="300" height="158"></a>
             <a class="about-company__link2 red-btn" href="#">Заблудились? Напишите нам!</a>
           </div>
         </div>
@@ -410,30 +409,38 @@
       </div>
     </div>
   </footer>
-  <div class="visually-hidden">
-    <form action="get" method="GET">
-      <p>
-        <label for="name">Ваше имя:</label>
-        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="email">Ваш email:</label>
-        <input type="text" name="email" id="email" placeholder="email@example.com">
-      </p>
-      <p>
-        <label for="comment">Текст письма:</label>
-        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-      </p>
-      <div class="color">
-        <button type="submit">Отправить</button>
+  <div class="popap">
+    <form class="container-form" action="get" method="GET">
+      <div class="contact-date">
+        <p class="contact-date__name">
+          <label class="contact-date__label" for="name">Ваше имя:</label>
+          <input class="contact-date__input" type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+        </p>
+        <p class="contact-date__email">
+          <label class="contact-date__label" for="email">Ваш e-mail:</label>
+          <input class="contact-date__input" type="text" name="email" id="email" placeholder="email@example.com"
+            required>
+        </p>
+        <p class="contact-date__txt">
+          <label class="contact-date__label" for="comment">Текст письма:</label>
+          <textarea class="contact-date__txt-area" name="comment" id="comment" cols="30" rows="8"
+            placeholder="В свободной форме"></textarea>
+        </p>
       </div>
-      <button type="button" aria-label="Закрыть">Закрыть</button>
+      <div class="background-button">
+        <button class="background-button__btn red-btn" type="submit">Отправить</button>
+      </div>
+      <button class="popap__close" type="button" aria-label="Закрыть">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </form>
   </div>
-  <div class="visually-hidden">
-    <img src="img/map-1.png" alt=" г.Санкт-Петербург, ул.Б.Конюшечная,д. 19/8
-      телефон +7(812)555-055" width="970" height="476">
-    <button type="button" aria-label="Закрыть">Закрыть</button>
+  <div class="popap__map">
+    <iframe src="https://yandex.ru/map-widget/v1/-/CGs75Bzt" width="940" height="446" frameborder="1"
+      allowfullscreen="true"></iframe>
+    <button class="popap__close" type="button" aria-label="Закрыть">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </div>
   <script src="js/main.js"></script>
 </body>
