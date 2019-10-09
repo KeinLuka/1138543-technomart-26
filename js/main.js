@@ -43,8 +43,11 @@ window.addEventListener("load", function () {
 
   var formPopap = document.querySelector(".popap-form");
   var openForm = document.querySelector(".about-company__link2");
-  var formFocusInput = formPopap.querySelector(".contact-date__input");
+  var formFocusInput = formPopap.querySelector("[name = name]");
+  var formEmail =  formPopap.querySelector("[name = email]");
   var closeForm = formPopap.querySelector(".popap__close");
+  var submissionForm = formPopap.querySelector(".background-button__btn");
+
 
   var mapPopap = document.querySelector(".popap-map");
   var openMap = document.querySelector(".about-company__map");
@@ -52,6 +55,7 @@ window.addEventListener("load", function () {
 
   var closePopap = function (el) {
     el.classList.remove("modal-show");
+    el.classList.remove("modal-error");
   };
 
   var openPopap = function (el) {
@@ -62,6 +66,13 @@ window.addEventListener("load", function () {
     evt.preventDefault();
     openPopap(formPopap);
     formFocusInput.focus();
+  });
+
+  submissionForm.addEventListener("click", function (evt) {
+    if (!formFocusInput.value || !formEmail.value) {
+      evt.preventDefault();
+      formPopap.classList.add("modal-error");
+    }
   });
 
   closeForm.addEventListener("click", function (evt) {

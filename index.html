@@ -24,7 +24,7 @@
                 d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
             </svg>
             <label for="search" class="visually-hidden">Поиск</label>
-            <input class="header__search" type="search" id="search" name="search" placeholder="Поиск:">
+            <input class="header__search" type="search" id="search" name="search" placeholder="Поиск:" autocomplete="off">
           </form>
           <a href="#" class="header-top__link bookmark">Закладки: 0</a>
           <a href="#" class="header-top__link cart">Корзина: 0</a>
@@ -77,8 +77,8 @@
         <div class="categoty__column">
           <div class="equipment__1">
             <div class="equipment__cart bcg-yellow">
-              <div class="equipment__new visually-hidden">
-                <h3>Новый товар</h3>
+              <div class="new">
+                <h3 class="visually-hidden">Новые Материалы</h3>
               </div>
               <h4 class="equipment__head">Материалы</h4>
               <a href="#" class="equipment__link">На любой вкус</a>
@@ -99,10 +99,10 @@
                 <div class="slide__icon">
                   <svg width="10" height="10">
                     <circle r="5" cx="5" cy="5" fill="#ffffff" />
+                    <circle r="3" cx="5" cy="5" fill="#ee3643" />
                   </svg>
                   <svg width="10" height="10">
                     <circle r="5" cx="5" cy="5" fill="#ffffff" />
-                    <circle r="3" cx="5" cy="5" fill="#ee3643" />
                   </svg>
                 </div>
               </div>
@@ -113,10 +113,10 @@
                 <div class="slide__icon">
                   <svg width="10" height="10">
                     <circle r="5" cx="5" cy="5" fill="#ffffff" />
-                    <circle r="3" cx="5" cy="5" fill="#ee3643" />
                   </svg>
                   <svg width="10" height="10">
                     <circle r="5" cx="5" cy="5" fill="#ffffff" />
+                    <circle r="3" cx="5" cy="5" fill="#ee3643" />
                   </svg>
                 </div>
               </div>
@@ -382,18 +382,18 @@
         </p>
         <ul class="footer-bottom__list">
           <li class="footer-bottom__item">
-            <a class="footer-bottom__link" href="#" aria-label="Техномарт в контакте">
-              <img class="footer-bottom__img-vk" src="img/icon-vk.svg" alt="Иконка Вконтакте" width="26" height="15">
+            <a class="footer-bottom__link footer-bottom__link-vk" href="#" aria-label="Техномарт в контакте">
+              <img class="footer-bottom__img-vk visually-hidden" src="img/icon-vk.svg" alt="Иконка Вконтакте" width="26" height="15">
             </a>
           </li>
           <li class="footer-bottom__item">
-            <a class="footer-bottom__link" href="#" aria-label="Техномарт фейсбука">
-              <img class="footer-bottom__img-f" src="img/icon-fb.svg" alt="Иконка фейсбука" width="12" height="22">
+            <a class="footer-bottom__link footer-bottom__link-fb" href="#" aria-label="Техномарт фейсбука">
+              <img class="footer-bottom__img-f visually-hidden" src="img/icon-fb.svg" alt="Иконка фейсбука" width="12" height="22">
             </a>
           </li>
           <li class="footer-bottom__item">
-            <a class="footer-bottom__link" href="#" aria-label="Техномарт инстаграмма">
-              <img class="footer-bottom__img-inst" src="img/icon-insta.svg" alt="Иконка инстаграмма" width="21"
+            <a class="footer-bottom__link footer-bottom__link-insta" href="#" aria-label="Техномарт инстаграмма">
+              <img class="footer-bottom__img-inst visually-hidden" src="img/icon-insta.svg" alt="Иконка инстаграмма" width="21"
                 height="21">
             </a>
           </li>
@@ -423,7 +423,7 @@
         </p>
         <p class="contact-date__txt">
           <label class="contact-date__label" for="comment">Текст письма:</label>
-          <textarea class="contact-date__txt-area" name="comment" id="comment" cols="30" rows="8"
+          <textarea class="contact-date__txt-area" name="comment" id="comment" cols="22" rows="7"
             placeholder="В свободной форме"></textarea>
         </p>
       </div>
