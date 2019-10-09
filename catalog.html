@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/min.normalize.css">
+  <link rel="stylesheet" href="css/min.style.css">
   <title>HTML Academy: Техномарт</title>
 </head>
 
@@ -33,13 +33,13 @@
       </div>
     </div>
     <div class="container">
-      <div class="header-info">
+      <div class="header-info header-info-catalog">
         <p class="header-info__desc">
           Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
         </p>
         <div class="contact">
           <div class="contact__phone">
-            <p class="contact__phone1-catalog">+7 (812) 555-05-55</p>
+              <a class="contact__phone1 contact__phone1-catalog" href="tel:+78125550555">+7 (812) 555-05-55</a>
           </div>
           <div class="contact__address">
             г. Санкт-Петербург, ул. Б. Конюшечная, д. 19/8
@@ -97,18 +97,16 @@
                 <div class="circle first-circle"></div>
                 <div class="circle second-circle"></div>
               </div>
-              <div class="prices">
-                <ul class="pric-list">
-                  <li class="pric">
-                    <label class="visually-hidden" for="min-size">0</label>
-                    <input class="pric__input" name="min-size" id="min-size" type="text" value="0">
-                  </li>
-                  <li class="pric">
-                    <label class="visually-hidden" for="max-size">30000</label>
-                    <input class="pric__input" name="max-size" id="max-size" type="text" value="30000">
-                  </li>
-                </ul>
-              </div>
+              <ul class="pric-list">
+                <li class="pric">
+                  <label class="visually-hidden" for="min-price">0</label>
+                  <input class="pric__input" name="min-price" id="min-size" type="text" value="0">
+                </li>
+                <li class="pric">
+                  <label class="visually-hidden" for="max-price">30000</label>
+                  <input class="pric__input" name="max-price" id="max-size" type="text" value="30000">
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="form__producer">
               <legend class="filter__product legend__producer">Производители:</legend>
@@ -181,7 +179,7 @@
                   <p class="product__price">15500 Р.</p>
                 </div>
                 <div class="poopup">
-                  <a class="poopup__link poopup_grn" href="#">Купить</a>
+                  <a href="buy.html" class="poopup__link poopup_grn" href="#">Купить</a>
                   <a class="poopup__link poopup_white" href="#">В закладки</a>
                 </div>
               </li>
@@ -193,7 +191,7 @@
                   <p class="product__price">25500 Р.</p>
                 </div>
                 <div class="poopup">
-                  <a class="poopup__link poopup_grn" href="#">Купить</a>
+                  <a href="buy.html" class="poopup__link poopup_grn" href="#">Купить</a>
                   <a class="poopup__link poopup_white" href="#">В закладки</a>
                 </div>
               </li>
@@ -207,7 +205,7 @@
                   <p class="product__price price">12500 Р.</p>
                 </div>
                 <div class="poopup">
-                  <a class="poopup__link poopup_grn" href="#">Купить</a>
+                  <a href="buy.html" class="poopup__link poopup_grn" href="#">Купить</a>
                   <a class="poopup__link poopup_white" href="#">В закладки</a>
                 </div>
               </li>
@@ -219,7 +217,7 @@
                   <p class="product__price">15500 Р.</p>
                 </div>
                 <div class="poopup">
-                  <a class="poopup__link poopup_grn" href="#">Купить</a>
+                  <a href="buy.html" class="poopup__link poopup_grn" href="#">Купить</a>
                   <a class="poopup__link poopup_white" href="#">В закладки</a>
                 </div>
               </li>
@@ -234,7 +232,7 @@
                   <p class="product__price">25500 Р.</p>
                 </div>
                 <div class="poopup">
-                  <a class="poopup__link poopup_grn" href="#">Купить</a>
+                  <a href="buy.html" class="poopup__link poopup_grn" href="#">Купить</a>
                   <a class="poopup__link poopup_white" href="#">В закладки</a>
                 </div>
               </li>
@@ -245,7 +243,7 @@
                   <p class="product__price price">12500 Р.</p>
                 </div>
                 <div class="poopup">
-                  <a class="poopup__link poopup_grn" href="#">Купить</a>
+                  <a href="buy.html" class="poopup__link poopup_grn" href="#">Купить</a>
                   <a class="poopup__link poopup_white" href="#">В закладки</a>
                 </div>
               </li>
@@ -260,7 +258,7 @@
                   <p class="product__price">15500 Р.</p>
                 </div>
                 <div class="poopup">
-                  <a class="poopup__link poopup_grn" href="#">Купить</a>
+                  <a href="buy.html" class="poopup__link poopup_grn" href="#">Купить</a>
                   <a class="poopup__link poopup_white" href="#">В закладки</a>
                 </div>
               </li>
@@ -272,7 +270,7 @@
                   <p class="product__price">25500 Р.</p>
                 </div>
                 <div class="poopup">
-                  <a class="poopup__link poopup_grn" href="#">Купить</a>
+                  <a href="buy.html" class="poopup__link poopup_grn" href="#">Купить</a>
                   <a class="poopup__link poopup_white" href="#">В закладки</a>
                 </div>
               </li>
@@ -283,7 +281,7 @@
                   <p class="product__price price">12500 Р.</p>
                 </div>
                 <div class="poopup">
-                  <a class="poopup__link poopup_grn" href="#">Купить</a>
+                  <a href="buy.html" class="poopup__link poopup_grn" href="#">Купить</a>
                   <a class="poopup__link poopup_white" href="#">В закладки</a>
                 </div>
               </li>
@@ -292,7 +290,7 @@
               <li><button class="product__btn active" type="button">1</button></li>
               <li><button class="product__btn" type="button">2</button></li>
               <li><button class="product__btn" type="button">3</button></li>
-              <li><button class="product__btn product__btn-next" type="button">Следущая</button></li>
+              <li><button class="product__btn product__btn-next" type="button">Следующая</button></li>
             </ul>
           </div>
         </div>
@@ -409,7 +407,7 @@
       <span class="visually-hidden">Закрыть</span>
     </button>
   </div>
-  <SCript src="js/catalog.js"></SCript>
+  <SCript src="js/min.catalog.js"></SCript>
 </body>
 
 </html>

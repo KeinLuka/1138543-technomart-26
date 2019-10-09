@@ -42,23 +42,29 @@ window.addEventListener("load", function () {
   });
 
   var formPopap = document.querySelector(".popap-form");
+  var form = formPopap.querySelector("form");
+  var formInputs = formPopap.querySelectorAll("input");
   var openForm = document.querySelector(".about-company__link2");
-  var formFocusInput = formPopap.querySelector("[name = name]");
-  var formEmail =  formPopap.querySelector("[name = email]");
+  var formFocusInput = formPopap.querySelector(".name-iput");
+  var formEmail = formPopap.querySelector(".name-email");
   var closeForm = formPopap.querySelector(".popap__close");
   var submissionForm = formPopap.querySelector(".background-button__btn");
-
 
   var mapPopap = document.querySelector(".popap-map");
   var openMap = document.querySelector(".about-company__map");
   var closeMap = mapPopap.querySelector(".popap__close");
 
   var closePopap = function (el) {
+    el.classList.remove("js-display");
     el.classList.remove("modal-show");
-    el.classList.remove("modal-error");
+    form.reset();
+    formInputs.forEach(function (inp) {
+      inp.style = null;
+    });
   };
 
   var openPopap = function (el) {
+    el.classList.add("js-display");
     el.classList.add("modal-show");
   };
 
@@ -66,13 +72,6 @@ window.addEventListener("load", function () {
     evt.preventDefault();
     openPopap(formPopap);
     formFocusInput.focus();
-  });
-
-  submissionForm.addEventListener("click", function (evt) {
-    if (!formFocusInput.value || !formEmail.value) {
-      evt.preventDefault();
-      formPopap.classList.add("modal-error");
-    }
   });
 
   closeForm.addEventListener("click", function (evt) {
@@ -91,10 +90,39 @@ window.addEventListener("load", function () {
   });
 
   window.addEventListener("keydown", function (evt) {
-    if ((evt.keyCode === 27 && formPopap.classList.contains("modal-show")) || mapPopap.classList.contains("modal-show")) {
+    if (
+      (evt.keyCode === 27 && formPopap.classList.contains("modal-show")) ||
+      mapPopap.classList.contains("modal-show")
+    ) {
       evt.preventDefault();
       closePopap(formPopap);
       closePopap(mapPopap);
     }
+  });
+
+  var removeError = function () {
+    formPopap.classList.remove("modal-error");
+    formPopap.classList.remove("modal-show");
+  };
+
+  var showError = function (el) {
+    el.style.border = "2px solid red";
+    formPopap.classList.add("modal-error");
+    setTimeout(removeError, 1000);
+  };
+
+  formInputs.forEach(function (inp) {
+    inp.addEventListener("input", function () {
+      inp.style = null;
+    });
+  });
+
+  submissionForm.addEventListener("click", function (evt) {
+    formInputs.forEach(function (inp) {
+      if (!inp.validity.valid) {
+        showError(inp);
+        evt.preventDefault();
+      }
+    });
   });
 });
