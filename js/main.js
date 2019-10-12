@@ -26,8 +26,8 @@ window.addEventListener("load", function () {
   });
 
   var sliders = document.querySelector(".bottom-slider");
-  var button = sliders.querySelectorAll(".bottom-slide__button");
-  var slide1 = sliders.querySelectorAll(".slider__item");
+  var button = sliders.querySelectorAll(".control-btn__button");
+  var slide1 = sliders.querySelectorAll(".bottom-slider__slide");
   button.forEach(function (btn, i) {
     btn.addEventListener("click", function () {
       button.forEach(function (btn) {
@@ -41,10 +41,10 @@ window.addEventListener("load", function () {
     });
   });
 
-  var formPopap = document.querySelector(".popap-form");
+  var formPopap = document.querySelector(".container-form");
   var form = formPopap.querySelector("form");
   var formInputs = formPopap.querySelectorAll("input");
-  var openForm = document.querySelector(".about-company__link2");
+  var openForm = document.querySelector(".about-company__link-contact");
   var formFocusInput = formPopap.querySelector(".name-iput");
   var formEmail = formPopap.querySelector(".name-email");
   var closeForm = formPopap.querySelector(".popap__close");
