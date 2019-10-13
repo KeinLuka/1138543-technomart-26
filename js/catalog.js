@@ -1,6 +1,6 @@
 window.addEventListener("load", function() {
   var catalogPopap = document.querySelector(".popap-catalog");
-  var openBtn = document.querySelectorAll(".poopup_grn");
+  var openBtn = document.querySelectorAll(".product-popup__link--green-btn");
   var closeBtn = catalogPopap.querySelector(".popap__close");
 
   var closePopap = function(el) {
