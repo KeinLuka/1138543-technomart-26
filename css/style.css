@@ -2206,19 +2206,19 @@ img {
   outline: none;
 }
 
-.footer-bottom__link-vk {
+.footer-bottom__link--vk {
   background-image: url(../img/icon-vk.svg);
   background-repeat: no-repeat;
   background-position: 7px;
 }
 
-.footer-bottom__link-fb {
+.footer-bottom__link--fb {
   background-image: url(../img/icon-fb.svg);
   background-repeat: no-repeat;
   background-position: 14px;
 }
 
-.footer-bottom__link-insta {
+.footer-bottom__link--inst {
   background-image: url(../img/icon-insta.svg);
   background-repeat: no-repeat;
   background-position: 10px;
