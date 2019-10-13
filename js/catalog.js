@@ -1,7 +1,7 @@
 window.addEventListener("load", function() {
-  var catalogPopap = document.querySelector(".popap-catalog");
+  var catalogPopap = document.querySelector(".popup-catalog");
   var openBtn = document.querySelectorAll(".product-popup__link--green-btn");
-  var closeBtn = catalogPopap.querySelector(".popap__close");
+  var closeBtn = catalogPopap.querySelector(".popup__close");
 
   var closePopap = function(el) {
     el.classList.remove("modal-show");

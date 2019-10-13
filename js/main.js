@@ -47,12 +47,12 @@ window.addEventListener("load", function () {
   var openForm = document.querySelector(".about-company__link-contact");
   var formFocusInput = formPopap.querySelector(".name-iput");
   var formEmail = formPopap.querySelector(".name-email");
-  var closeForm = formPopap.querySelector(".popap__close");
+  var closeForm = formPopap.querySelector(".popup__close");
   var submissionForm = formPopap.querySelector(".background-button__btn");
 
-  var mapPopap = document.querySelector(".popap-map");
+  var mapPopap = document.querySelector(".popup-map");
   var openMap = document.querySelector(".about-company__map");
-  var closeMap = mapPopap.querySelector(".popap__close");
+  var closeMap = mapPopap.querySelector(".popup__close");
 
   var closePopap = function (el) {
     el.classList.remove("js-display");

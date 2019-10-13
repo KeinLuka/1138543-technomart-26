@@ -2270,7 +2270,7 @@ img {
   z-index: 1;
 }
 
-.popap-form {
+.popup-form {
   position: relative;
 }
 
@@ -2347,7 +2347,7 @@ img {
   border-radius: 4px;
 }
 
-.popap__close {
+.popup__close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -2357,7 +2357,7 @@ img {
   border: none;
 }
 
-.popap__close::before {
+.popup__close::before {
   content: "";
   display: block;
   position: absolute;
@@ -2369,7 +2369,7 @@ img {
   right: 1px;
 }
 
-.popap-map {
+.popup-map {
   display: none;
   width: 940px;
   position: fixed;
@@ -2383,13 +2383,13 @@ img {
   box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.6);
 }
 
-.popap-map__iframe {
+.popup-map__iframe {
   border: none;
 }
 
 /*стили для страницы каталог*/
 
-.popap-catalog {
+.popup-catalog {
   display: none;
   width: 620px;
   position: fixed;
@@ -2406,7 +2406,7 @@ img {
   box-sizing: border-box;
 }
 
-.popap-catalog__desc {
+.popup-catalog__desc {
   position: relative;
   text-transform: none;
   padding-left: 179px;
@@ -2414,7 +2414,7 @@ img {
   padding-bottom: 67px;
 }
 
-.popap-catalog__desc::before {
+.popup-catalog__desc::before {
   content: "";
   display: block;
   position: absolute;
@@ -2426,13 +2426,13 @@ img {
   left: 81px;
 }
 
-.popap-catalog__area {
+.popup-catalog__area {
   background-color: #f1f1f1;
   padding-top: 38px;
   padding-bottom: 38px;
 }
 
-.popap-catalog__list {
+.popup-catalog__list {
   width: 460px;
   margin: 0 auto;
   list-style: none;
@@ -2447,13 +2447,13 @@ img {
   justify-content: space-between;
 }
 
-.popap-catalog__btn {
+.popup-catalog__btn {
   width: 220px;
   min-height: 38px;
   border: none;
 }
 
-.popap-catalog__btn-white {
+.popup-catalog__btn-white {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
