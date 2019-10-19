@@ -3,7 +3,16 @@ window.addEventListener("load", function () {
   var btnPrev = slider.querySelector(".slider__btn--prev");
   var btnNext = slider.querySelector(".slider__btn--next");
   var slide = slider.querySelectorAll(".slide");
+  var sliderRadio = slider.querySelectorAll(".radio-input");
   var i = 0;
+
+  sliderRadio.forEach(function (inp, j) {
+    inp.addEventListener("change", function () {
+      slide[j].classList.add("js-display");
+      slide[i].classList.remove("js-display");
+      i = j;
+    });
+  });
 
   btnNext.addEventListener("click", function (e) {
     e.preventDefault();
@@ -12,6 +21,7 @@ window.addEventListener("load", function () {
     if (i > slide.length - 1) {
       i = 0;
     }
+    sliderRadio[i].checked = true;
     slide[i].classList.add("js-display");
   });
 
@@ -22,8 +32,11 @@ window.addEventListener("load", function () {
     if (i < 0) {
       i = slide.length - 1;
     }
+    sliderRadio[i].checked = true;
     slide[i].classList.add("js-display");
   });
+
+
 
   var sliders = document.querySelector(".bottom-slider");
   var button = sliders.querySelectorAll(".control-btn__button");

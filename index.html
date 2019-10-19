@@ -14,24 +14,21 @@
 <body>
   <header class="header">
     <div class="header-top">
-      <div class="container">
-        <div class="wrap">
-          <a href="#" class="logo-link header-logo" aria-label="Логотип Техномарта">
-            <img src="img/logo-technomart.svg" class="logo-img" alt="Логотип" width="109" height="19">
-          </a>
-          <form action="https://echo.htmlacademy.ru" class="header__form">
-            <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-              <path
-                d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
-            </svg>
-            <label for="search" class="visually-hidden">Поиск</label>
-            <input class="header__search" type="search" id="search" name="search" placeholder="Поиск:"
-              autocomplete="off">
-          </form>
-          <a href="#" class="header-top__link bookmark">Закладки: 0</a>
-          <a href="#" class="header-top__link cart">Корзина: 0</a>
-          <a href="#" class="header-top__link btn-green">Оформить заказ</a>
-        </div>
+      <div class="container wrap">
+        <a href="#" class="logo-link header-logo" aria-label="Логотип Техномарта">
+          <img src="img/logo-technomart.svg" class="logo-img" alt="Логотип" width="109" height="19">
+        </a>
+        <form action="https://echo.htmlacademy.ru" class="header__form">
+          <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+            <path
+              d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
+          </svg>
+          <label for="search" class="visually-hidden">Поиск</label>
+          <input class="header__search" type="search" id="search" name="search" placeholder="Поиск:" autocomplete="off">
+        </form>
+        <a href="#" class="header-top__link bookmark">Закладки: 0</a>
+        <a href="#" class="header-top__link cart">Корзина: 0</a>
+        <a href="#" class="header-top__link btn-green">Оформить заказ</a>
       </div>
     </div>
     <div class="container">
@@ -40,9 +37,7 @@
           Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
         </p>
         <div class="contact">
-          <div class="contact__info">
-            <a class="contact__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          </div>
+          <a class="contact__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <div class="contact__address">
             г. Санкт-Петербург, ул. Б. Конюшечная, д. 19/8
           </div>
@@ -78,10 +73,7 @@
         <h2 class="visually-hidden">Разделы сайта</h2>
         <div class="category__column">
           <div class="equipment__left">
-            <div class="equipment__cart equipment__cart--yellow">
-              <div class="new">
-                <h3 class="visually-hidden">Новые Материалы</h3>
-              </div>
+            <div class="equipment__cart equipment__cart--yellow new" aria-label="Новые Материалы">
               <h4 class="equipment__head">Материалы</h4>
               <a href="#" class="equipment__link">На любой вкус</a>
             </div>
@@ -90,37 +82,30 @@
               <a href="#" class="equipment__link">На все случаи</a>
             </div>
             <div class="slider">
-              <div class="slider__controls">
+              <div class="slider__controls-arrow">
                 <button class="slider__btn slider__btn--prev" type="button" aria-label="Предидущий слайд"></button>
                 <button class="slider__btn slider__btn--next" type="button" aria-label="Следующий слайд"></button>
+              </div>
+              <ul class="slider__controls-radio">
+                <li>
+                  <input class="radio-input" type="radio" name="slide-input" id="first-input" checked>
+                  <label class="radio-label" for="first-input"><span class="visually-hidden">Первый слайд</span></label>
+                </li>
+                <li>
+                  <input class="radio-input" type="radio" name="slide-input" id="second-input">
+                  <label class="radio-label" for="second-input"><span class="visually-hidden">Второй
+                      слайд</span></label>
+                </li>
+              </ul>
+              <div class="slide slide--second js-display">
+                <h4 class="slide__title">Дрели</h4>
+                <p class="slide__description">Соседям на радость!</p>
+                <a class="slide__link red-btn" href="catalog.html">Открыть каталог</a>
               </div>
               <div class="slide slide--first">
                 <h4 class="slide__title">Перфораторы</h4>
                 <p class="slide__description">Настоящие мужские игрушки</p>
                 <a class="slide__link red-btn" href="catalog.html">Открыть каталог</a>
-                <div class="slide__icon">
-                  <svg width="10" height="10">
-                    <circle r="5" cx="5" cy="5" fill="#ffffff" />
-                    <circle r="3" cx="5" cy="5" fill="#ee3643" />
-                  </svg>
-                  <svg width="10" height="10">
-                    <circle r="5" cx="5" cy="5" fill="#ffffff" />
-                  </svg>
-                </div>
-              </div>
-              <div class="slide slide--second js-display">
-                <h4 class="slide__title">Дрели</h4>
-                <p class="slide__description">Соседям на радость!</p>
-                <a class="slide__link red-btn" href="catalog.html">Открыть каталог</a>
-                <div class="slide__icon">
-                  <svg width="10" height="10">
-                    <circle r="5" cx="5" cy="5" fill="#ffffff" />
-                  </svg>
-                  <svg width="10" height="10">
-                    <circle r="5" cx="5" cy="5" fill="#ffffff" />
-                    <circle r="3" cx="5" cy="5" fill="#ee3643" />
-                  </svg>
-                </div>
               </div>
             </div>
           </div>
@@ -148,51 +133,44 @@
           <a href="#" class="headline__link red-btn">Все популярные товары</a>
         </div>
         <ul class="popular__list">
-          <li class="popular__item">
-            <div class="product">
-              <img class="product__img" src="img/Perforator_1.jpg" alt="фото товара" width="218" height="170">
-              <h4 class="product__title"><a href="#" class="title__link">Перфоратор BOSCH BFG 9000</a></h4>
-              <p class="product__old-price">32500 Р.</p>
-              <p class="product__price">25500 Р.</p>
-            </div>
+          <li class="popular__item product">
+            <img class="product__img" src="img/Perforator_1.jpg" alt="Перфоратор BOSCH BFG 9000" width="218"
+              height="170">
+            <h4 class="product__title"><a href="#" class="title__link">Перфоратор BOSCH BFG 9000</a></h4>
+            <p class="product__old-price">32500 Р.</p>
+            <p class="product__price">25500 Р.</p>
             <div class="product-popup">
               <a href="buy.html" class="product-popup__link product-popup__link--green-btn">Купить</a>
               <a class="product-popup__link product-popup__link--white-btn" href="#">В закладки</a>
             </div>
           </li>
-          <li class="popular__item">
-            <div class="product">
-              <img class="product__img" src="img/Perforator_2.jpg" alt="фото товара" width="218" height="170">
-              <h4 class="product__title"><a href="#" class="title__link">Перфоратор BOSCH BFG 3000</a></h4>
-              <p class="product__old-price">22500 Р.</p>
-              <p class="product__price">15500 Р.</p>
-            </div>
+          <li class="popular__item product">
+            <img class="product__img" src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218"
+              height="170">
+            <h4 class="product__title"><a href="#" class="title__link">Перфоратор BOSCH BFG 3000</a></h4>
+            <p class="product__old-price">22500 Р.</p>
+            <p class="product__price">15500 Р.</p>
             <div class="product-popup">
               <a href="buy.html" class="product-popup__link product-popup__link--green-btn">Купить</a>
               <a class="product-popup__link product-popup__link--white-btn" href="#">В закладки</a>
             </div>
           </li>
-          <li class="popular__item">
-            <div class="product">
-              <img class="product__img" src="img/Perforator_3.jpg" alt="фото товара" width="218" height="170">
-              <h4 class="product__title"><a href="#" class="title__link">Перфоратор BOSCH BFG 6000</a></h4>
-              <p class="product__old-price">30500 Р.</p>
-              <p class="product__price">25500 Р.</p>
-            </div>
+          <li class="popular__item product">
+            <img class="product__img" src="img/Perforator_3.jpg" alt="Перфоратор BOSCH BFG 6000" width="218"
+              height="170">
+            <h4 class="product__title"><a href="#" class="title__link">Перфоратор BOSCH BFG 6000</a></h4>
+            <p class="product__old-price">30500 Р.</p>
+            <p class="product__price">25500 Р.</p>
             <div class="product-popup">
               <a href="buy.html" class="product-popup__link product-popup__link--green-btn">Купить</a>
               <a class="product-popup__link product-popup__link--white-btn" href="#">В закладки</a>
             </div>
           </li>
-          <li class="popular__item">
-            <div class="new">
-              <h3 class="visually-hidden">Новый товар</h3>
-            </div>
-            <div class="product">
-              <img class="product__img" src="img/Perforator_2.jpg" alt="фото товара" width="218" height="170">
-              <h4 class="product__title"><a href="#" class="title__link">Перфоратор BOSCH BFG 2000</a></h4>
-              <p class="product__price price">12500 Р.</p>
-            </div>
+          <li class="popular__item product new" aria-label="Новый товар">
+            <img class="product__img" src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 2000" width="218"
+              height="170">
+            <h4 class="product__title"><a href="#" class="title__link">Перфоратор BOSCH BFG 2000</a></h4>
+            <p class="product__price price">12500 Р.</p>
             <div class="product-popup">
               <a href="buy.html" class="product-popup__link product-popup__link--green-btn">Купить</a>
               <a class="product-popup__link product-popup__link--white-btn" href="#">В закладки</a>
@@ -221,7 +199,7 @@
           </li>
           <li class="brand__item">
             <a href="#" class="brand__link" aria-label="Логотип Интерскол"><img class="brand__img"
-                src="img/Интерскол.png" alt="Логотип Интерскол" width="200" height="86"></a>
+                src="img/Interskol.png" alt="Логотип Интерскол" width="200" height="86"></a>
           </li>
           <li class="brand__item">
             <a href="#" class="brand__link" aria-label="Логотип Hitachi"><img class="brand__img" src="img/Hitachi.png"
@@ -279,8 +257,8 @@
             <h3 class="title-item title">Гарантия</h3>
             <p class="bottom-slider__desc-guaranty">
               Если купленный у нас товар поломается или заискрит<br>
-              а так же в случае пожара, спровоцированного его возгоранием,<br>
-              вы всегда модете быть уверенны в нашей гарантии. Мы обменяем<br>
+              а так же в случае пожара, спровоцированного его возгоранием,
+              вы всегда модете быть уверенны в нашей гарантии. Мы обменяем
               сгоревший товар на новый.<br>
               Дом уж восстановите как нибудь сами.
             </p>
@@ -322,7 +300,8 @@
             <p class="about-company__desc-adress">Вы можете забрать товар сами,
               заехав в наш офис:
             </p>
-            <a class="about-company__map" href="map.html"><img class="about-company__img" src="img/map-2.png" alt=" г.Санкт-Петербург, ул.Б.Конюшечная,д. 19/8
+            <a class="about-company__map" href="map.html" aria-label="Ссылка на карту"><img class="about-company__img"
+                src="img/map-2.png" alt="г.Санкт-Петербург, ул.Б.Конюшечная,д. 19/8
               телефон +7(812)555-055" width="300" height="158"></a>
             <a class="about-company__link-contact red-btn" href="popup.html">Заблудились? Напишите нам!</a>
           </div>
