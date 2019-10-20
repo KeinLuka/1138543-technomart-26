@@ -456,6 +456,7 @@ img {
 
 .account__list-margin {
   margin-bottom: 5px;
+  align-items: stretch;
 }
 
 .white-btn {
@@ -476,11 +477,12 @@ img {
   position: absolute;
   width: 20px;
   height: 18px;
-  top: 12px;
+  top: 50%;
   left: 12px;
-  background-image: url("../img/icon-user.svg");
+  background-image: url(../img/icon-user.svg);
   background-repeat: no-repeat;
   opacity: 0.3;
+  margin-top: -9px;
 }
 
 .name__link {
@@ -495,6 +497,8 @@ img {
   display: block;
   padding-top: 44px;
   position: relative;
+  box-sizing: border-box;
+  height: 100%
 }
 
 .exit__link::before {
@@ -502,11 +506,12 @@ img {
   position: absolute;
   width: 20px;
   height: 18px;
-  top: 14px;
+  top: 50%;
   left: 15px;
-  background-image: url("../img/icon-logout.svg");
+  background-image: url(../img/icon-logout.svg);
   background-repeat: no-repeat;
   opacity: 0.3;
+  margin-top: -9px;
 }
 
 .white-btn:hover:before,
